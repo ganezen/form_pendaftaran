@@ -1,12 +1,11 @@
-**************************
-lsp_ci3
-**************************
+
+# lsp_ci3
 
 Reuse_Codeigniter 3 Adalah sebuah aplikasi berbasis web untuk menyimpan data dari peserta lomba menggunakan system CRUD dengan menggunakan Framework Codeigniter 3.Aplikasi ini dibuat menggunakan text editor Microsoft Visual Studio dan XAMPP.Untuk database menggunakan phpMyAdmin dan untuk template views dari header, sidebar, dan footer menggunakan tampilan dari boostrap 4.6x.
 
-*******************
-Konfigurasi Koneksi database pada codeigniter
-*******************
+
+# Konfigurasi Koneksi database pada codeigniter
+
 
 Pada gambar potongan syntax dibawah ini menampilkan konfigurasi untuk database dengan nama database pendaftaran.
 
@@ -20,9 +19,9 @@ Pada Table yang digunakan adalah tbl_peserta yang berisikan id_peserta, nama_pes
 
 
 
-**************************
-Fungsi CRUD pada Controller
-**************************
+
+# Fungsi CRUD pada Controller
+
 
 Pada potongan gambar dibawah ini memperlihatkan fungsi dari index untuk menampilkan data yang diambil dari model Peserta_model.Kemudian membuat parsing data untuk title dan peserta dengan mengambil data dari fungsi get_data yang ada pada model Peserta_model pada table tbl_peserta.
 ![image](https://user-images.githubusercontent.com/62431769/177008764-a7f0e779-870a-42f4-a822-3afd0a52c927.png)
@@ -44,9 +43,9 @@ Pada potongan gambar dibawah ini adalah fungsi untuk mendelete data yang diambil
 ![image](https://user-images.githubusercontent.com/62431769/177008799-e159e88b-437a-44f8-af35-b5adb4d13259.png)
 
 
-*******************
-Model Model_peserta
-*******************
+
+# Model Model_peserta
+
 Pada potongan gambar dibawah ini adalah fungsi dari get_data yang digunakan untuk mengambil data dari table yang ada pada database.
 
 ![image](https://user-images.githubusercontent.com/62431769/177008801-6acf7355-788b-45df-8e84-3c2b455d109d.png)
@@ -66,31 +65,31 @@ Selanjutnya ada function delete yang akan digunakan untuk menghapus nilai pada d
 
 
 
-*******
-Template View dari file peserta untuk data table yang ada pada halaman home
-*******
+
+# Template View dari file peserta untuk data table yang ada pada halaman home
+
 ![image](https://user-images.githubusercontent.com/62431769/177008825-825146c5-153d-48e7-84d4-2c2e56dab7f9.png)
 
 
-************
-Template View dari file peserta untuk form edit data pada halaman home
-************
+
+# Template View dari file peserta untuk form edit data pada halaman home
+
 ![image](https://user-images.githubusercontent.com/62431769/177008828-c6a2d7c9-e21a-4c4c-8d9f-6d14881c3dfb.png)
 
 
 
 
-*********
-Uji Coba Program Halaman Utama
-*********
+
+# Uji Coba Program Halaman Utama
+
 Pada halaman utama tidak ada data yang ditampilkan dikarenakan database masih kosong belum di insert datanya.
 ![image](https://user-images.githubusercontent.com/62431769/177008834-23f9b7d4-f8ac-4c20-b2a3-c849ae27e433.png)
 
 
 
-***************
-Uji Coba Program Halaman Tambah
-***************
+
+# Uji Coba Program Halaman Tambah
+
 ![image](https://user-images.githubusercontent.com/62431769/177008839-9006dcd6-a09a-4699-9eb5-9a9ebee6660c.png)
 
 
@@ -106,9 +105,9 @@ Jika data berhasil dimasukkan maka halaman akan langsung berpindah ke halaman ho
 ![image](https://user-images.githubusercontent.com/62431769/177008851-e6e88884-0772-43f0-8ff7-3007f74eb1ad.png)
 
 
-***************
-Uji Coba Program Update Data
-***************
+
+# Uji Coba Program Update Data
+
 Jika menekan icon update data maka akan muncul sebuah form untuk update data
 ![image](https://user-images.githubusercontent.com/62431769/177008855-865bb525-e2e0-41a5-b9cb-0503809a59fc.png)
 
@@ -118,9 +117,9 @@ Jika data berhasil di update maka akan memunculkan pesan data berhasil diubah.
 ![image](https://user-images.githubusercontent.com/62431769/177008859-d91f3d71-de3f-4f17-8e2d-b45c86355307.png)
 
 
-***************
-Uji Coba program Delete Data
-***************
+
+# Uji Coba program Delete Data
+
 Jika menekan icon delete data, maka data akan langsung dihapuskan dari table dan database kemudian menampilkan pesan data berhasil di hapus.
 
 ![image](https://user-images.githubusercontent.com/62431769/177008861-04ed7cdd-029e-4a9d-a26a-f40c90abc848.png)
@@ -128,9 +127,9 @@ Jika menekan icon delete data, maka data akan langsung dihapuskan dari table dan
 
 
 
-***************
-Flowchart
-***************
+
+# Flowchart
+
 Ketika aplikasi dijalankan maka akan menampilkan data dari table.Pada halaman home terdapat button tambah data yang Ketika ditekan akan berpindah ke halaman tambah data yang nantinya akan diminta untuk memasukkan nama peserta,kelas peserta, alamat peserta, dan nomor telepon.Jika data ada yang dikosongkan maka data tidak akan tersimpan dan akan Kembali ke halaman input tambah data.
 
 Kemudian jika data berhasil ditambahkan akan muncul dua buah button yaitu delete dan edit data.Untuk button edit data akan menampilkan form yang berisikan inputan yang sama seperti pada halaman tambah data.Kemudian jika data sudah di update maka data akan tersimpan di dalam database dan Kembali ke halaman utama.Untuk button delete akan menghapus data yang ada pada database dan Kembali ke halaman utama.
