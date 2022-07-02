@@ -1,5 +1,5 @@
 
-# form_pendaftara
+# form_pendaftaran
 
 Reuse_Codeigniter 3 Adalah sebuah aplikasi berbasis web untuk menyimpan data dari peserta lomba menggunakan system CRUD dengan menggunakan Framework Codeigniter 3.Aplikasi ini dibuat menggunakan text editor Microsoft Visual Studio dan XAMPP.Untuk database menggunakan phpMyAdmin dan untuk template views dari header, sidebar, dan footer menggunakan tampilan dari boostrap 4.6x.
 
