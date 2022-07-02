@@ -48,6 +48,7 @@ Pada potongan gambar dibawah ini adalah fungsi untuk mendelete data yang diambil
 Model Model_peserta
 *******************
 Pada potongan gambar dibawah ini adalah fungsi dari get_data yang digunakan untuk mengambil data dari table yang ada pada database.
+
 ![image](https://user-images.githubusercontent.com/62431769/177008801-6acf7355-788b-45df-8e84-3c2b455d109d.png)
 
 
