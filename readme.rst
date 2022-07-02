@@ -1,70 +1,110 @@
 ###################
-What is CodeIgniter
+lsp_ci3
 ###################
 
-CodeIgniter is an Application Development Framework - a toolkit - for people
-who build web sites using PHP. Its goal is to enable you to develop projects
-much faster than you could if you were writing code from scratch, by providing
-a rich set of libraries for commonly needed tasks, as well as a simple
-interface and logical structure to access these libraries. CodeIgniter lets
-you creatively focus on your project by minimizing the amount of code needed
-for a given task.
+Reuse_Codeigniter 3 Adalah sebuah aplikasi berbasis web untuk menyimpan data dari peserta lomba menggunakan system CRUD dengan menggunakan Framework Codeigniter 3.Aplikasi ini dibuat menggunakan text editor Microsoft Visual Studio dan XAMPP.Untuk database menggunakan phpMyAdmin dan untuk template views dari header, sidebar, dan footer menggunakan tampilan dari boostrap 4.6x.
 
 *******************
-Release Information
+Konfigurasi Koneksi database pada codeigniter
 *******************
 
-This repo contains in-development code for future releases. To download the
-latest stable release please visit the `CodeIgniter Downloads
-<https://codeigniter.com/download>`_ page.
+Pada gambar potongan syntax dibawah ini menampilkan konfigurasi untuk database dengan nama database pendaftaran.
+//SS
+
+Pada Table yang digunakan adalah tbl_peserta yang berisikan id_peserta, nama_peserta, kelas_peserta, alamat_peserta dan nomor_telepon.
+//SS
+/SS
+
 
 **************************
-Changelog and New Features
+Fungsi CRUD pada Controller
 **************************
 
-You can find a list of all changes for each release in the `user
-guide change log <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/changelog.rst>`_.
+Pada potongan gambar dibawah ini memperlihatkan fungsi dari index untuk menampilkan data yang diambil dari model Peserta_model.Kemudian membuat parsing data untuk title dan peserta dengan mengambil data dari fungsi get_data yang ada pada model Peserta_model pada table tbl_peserta.
+//SS
+
+Pada potongan gambar selanjutnya menampilkan fungsi dari tambah yang digunakan untuk menambahkan/memasukkan data dari peserta dengan membuat data penampung title untuk nama page nya.
+//SS
+Pada potongan gambar dibawah ini menunjukkan fungsi dari _rules yang digunakan untuk validasi data apa saja yang harus atau diwajibkan untuk diisikan, jika data yang harus diisi dikosongkan maka data tidak akan bisa di tambahkan dan akan menampilkan tulisan Mohon isi data.
+//SS
+
+Pada potongan gambar dibawah ini menampilkan fungsi dari tambah_action dengan menggunakan fungsi _rules sebagai aturan validasi yang harus diinputkannya.
+//SS
+
+Pada potongan gambar dibawah ini adalah fungsi untuk mendelete data yang diambil berdasarkan dari id_peserta pada table tbl_peserta.Kemudian membuat flash data berupa pesan yang akan muncul Ketika data berhasil di hapus.
+//SS
 
 *******************
-Server Requirements
+Model Model_peserta
 *******************
+Pada potongan gambar dibawah ini adalah fungsi dari get_data yang digunakan untuk mengambil data dari table yang ada pada database.
+//SS
 
-PHP version 5.6 or newer is recommended.
+Pada potongan gambar dibawah ini adalah fungsi dari insert_data yang digunakan untuk memasukkan data dari table yang nantinya akan dipanggil menggunakan controller pada fungsi tambah_action.
+//SS
 
-It should work on 5.3.7 as well, but we strongly advise you NOT to run
-such old versions of PHP, because of potential security and performance
-issues, as well as missing features.
+Dilanjutkan dengan potongan gambar dibawah ini, yaitu untuk menampung nilai dari update data yang dimana data akan diambil berdasarkan dari id_peserta.
+//SS
 
-************
-Installation
-************
+Selanjutnya ada function delete yang akan digunakan untuk menghapus nilai pada database yang diambil menggunakan id_peserta.
+//SS
 
-Please see the `installation section <https://codeigniter.com/user_guide/installation/index.html>`_
-of the CodeIgniter User Guide.
 
 *******
-License
+Template View dari file peserta untuk data table yang ada pada halaman home
 *******
+//SS
 
-Please see the `license
-agreement <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/license.rst>`_.
+************
+Template View dari file peserta untuk form edit data pada halaman home
+************
+//SS
+
+
 
 *********
-Resources
+Uji Coba Program Halaman Utama
 *********
+Pada halaman utama tidak ada data yang ditampilkan dikarenakan database masih kosong belum di insert datanya.
+/SS
 
--  `User Guide <https://codeigniter.com/docs>`_
--  `Language File Translations <https://github.com/bcit-ci/codeigniter3-translations>`_
--  `Community Forums <http://forum.codeigniter.com/>`_
--  `Community Wiki <https://github.com/bcit-ci/CodeIgniter/wiki>`_
--  `Community Slack Channel <https://codeigniterchat.slack.com>`_
-
-Report security issues to our `Security Panel <mailto:security@codeigniter.com>`_
-or via our `page on HackerOne <https://hackerone.com/codeigniter>`_, thank you.
 
 ***************
-Acknowledgement
+Uji Coba Program Halaman Tambah
 ***************
+//SS
 
-The CodeIgniter team would like to thank EllisLab, all the
-contributors to the CodeIgniter project and you, the CodeIgniter user.
+Berdasarkan validasi yang ada fungsi rules sebelumnya, Semua data wajib diisikan tidak boleh kosong, jika ada data yang dikosongkan maka data tidak akan masuk dan muncul alert atau pemberitahuan data harus di isi seperti pada gambar dibawah ini
+
+//SS
+
+Jika data berhasil dimasukkan maka halaman akan langsung berpindah ke halaman home dan data akan tampil pada tablenya .Data juga akan tersimpan pada database.
+
+//SS
+//SS
+
+***************
+Uji Coba Program Update Data
+***************
+Jika menekan icon update data maka akan muncul sebuah form untuk update data
+//SS
+
+Jika data berhasil di update maka akan memunculkan pesan data berhasil diubah.
+
+//SS
+
+***************
+Uji Coba program Delete Data
+***************
+Jika menekan icon delete data, maka data akan langsung dihapuskan dari table dan database kemudian menampilkan pesan data berhasil di hapus.
+
+//SS
+
+***************
+Flowchart
+***************
+Ketika aplikasi dijalankan maka akan menampilkan data dari table.Pada halaman home terdapat button tambah data yang Ketika ditekan akan berpindah ke halaman tambah data yang nantinya akan diminta untuk memasukkan nama peserta,kelas peserta, alamat peserta, dan nomor telepon.Jika data ada yang dikosongkan maka data tidak akan tersimpan dan akan Kembali ke halaman input tambah data.
+
+Kemudian jika data berhasil ditambahkan akan muncul dua buah button yaitu delete dan edit data.Untuk button edit data akan menampilkan form yang berisikan inputan yang sama seperti pada halaman tambah data.Kemudian jika data sudah di update maka data akan tersimpan di dalam database dan Kembali ke halaman utama.Untuk button delete akan menghapus data yang ada pada database dan Kembali ke halaman utama.
+
+//SS
