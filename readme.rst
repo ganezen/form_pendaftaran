@@ -9,7 +9,7 @@ Konfigurasi Koneksi database pada codeigniter
 *******************
 
 Pada gambar potongan syntax dibawah ini menampilkan konfigurasi untuk database dengan nama database pendaftaran.
-//SS
+
 
 Pada Table yang digunakan adalah tbl_peserta yang berisikan id_peserta, nama_peserta, kelas_peserta, alamat_peserta dan nomor_telepon.
 //SS
